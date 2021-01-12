@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(to right, #f857a6, #ff5858);
+    height: 100vh;
+    padding: 40px;
+}
+
+.filter{
+    width: 45vw;
+    margin-left: 6%;
+}
+
+.strikeThrough {
+    text-decoration: line-through;
+}
+
+.body {
+    Font-family: Open Sans;
+    Font-weight: 300;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    background: white;
+    width: 50vw;
+    margin-left: 25%;
+    
+}
+
+.completebtn {
+ background: white;
+ color: #ff1493;
+ border-color: #ff1493;
+ border-radius: 10%;
+}
+
+.listItems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addInput {
+    width: 45vw;
+    margin-left: 6%;
+}
+
+.addBtn {
+    width: 46vw;
+    margin-left: 6%;
+    background: #ff1493;
+    color: white;
+    border-color: #ff1493;
+    border-radius: 10%;
+}

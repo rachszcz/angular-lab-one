@@ -1,1 +1,24 @@
-<p>todo works!</p>
+<body>
+    <section class="body">
+        <h1>Travel ToDo List</h1>
+        <div class="list">
+            <form>
+                <input type="text" name="filter" [(ngModel)]="filter" class="filter" placeholder="Filter your to-dos">
+            </form>
+            <ol>
+                <li *ngFor="let todo of getFilteredResults(); index as i"  class="listItems"> 
+                    <span [ngClass]="{strikeThrough: todo.completed }">
+                    <button class="completebtn" *ngIf="!todo.completed" (click)="markComplete(todo)" > Complete </button> {{ todo.task }}
+                </span>  
+                <button class="xBtn" (click)="removeTask(todo.task)">X</button> </li>
+            </ol>
+        </div>
+        <form>
+            <input  [(ngModel)]="addToDo" type="text" name="to-do" class="addInput" placeholder="Add your to-do"/>
+            <button class="addBtn" (click)="addToList()">Add</button>
+        </form>
+        
+    </section>
+</body>
+
+
